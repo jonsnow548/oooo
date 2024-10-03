@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextNume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextBrand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Brand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNume"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextDescriere"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Descriere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextBrand"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextCategorie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Categorie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextDescriere"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextCuloare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Culoare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextCategorie"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextPret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Preț"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextCuloare"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextMarime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Mărime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPret"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextStoc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Stoc"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextMarime"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonChooseImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Alege imagine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextStoc"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewHaina"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonChooseImage"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/buttonAdauga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Adaugă Haina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewHaina"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
